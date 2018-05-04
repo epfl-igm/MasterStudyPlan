@@ -3,6 +3,7 @@
 
 <head>
   <link href="dep/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="dep/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
   <meta charset="utf-8">
   <title>MSP - Courses</title>
 </head>
@@ -39,20 +40,23 @@
   </table>
 
   <script src="dep/jquery/dist/jquery.min.js"></script>
+  <script src="dep/datatables.net/js/jquery.dataTables.js"></script>
   <script>
     $(document).ready(function() {
       console.log("Document loaded");
       $.getJSON("data/courses.json", function(data) {
         var courses = [];
         $.each(data, function(index, course) {
-          console.log(course.Cours);
+          //console.log(course);
           $('#coursesList tr:last').after('<tr><td>' + course.Cours + '</td><td>' + course.Code + '</td><td>' + course.Enseignant + '</td><td>' + course.Sem + '</td><td>' + course.ECTS + '</td><td>' + course.Exam + '</td></tr>');
         });
       });
+      $('#coursesList').DataTables();
     });
   </script>
 
   <script src="dep/bootstrap/dist/js/bootstrap.bundle.js.map"></script>
+  <script src="dep/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
 </body>
 
 </html>
