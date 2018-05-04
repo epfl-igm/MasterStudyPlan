@@ -26,37 +26,27 @@
           <a class="nav-link" href="#">Settings</a>
         </li>
       </ul>
+    </div>
   </nav>
 
-  <table id="coursesList">
-    <tr>
-      <th>Title</th>
-      <th>Code</th>
-      <th>Teacher</th>
-      <th>Semester</th>
-      <th>ECTS</th>
-      <th>Exam</th>
-    </tr>
+  <table id="coursesTable" class="display" style="width:100%">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Code</th>
+        <th>Teacher</th>
+        <th>Semester</th>
+        <th>ECTS</th>
+       <th>Exam</th>
+      </tr>
+    </thead>
+    <tbody id="coursesList">
+    </tbody>
   </table>
 
-  <script src="dep/jquery/dist/jquery.min.js"></script>
   <script src="dep/datatables.net/js/jquery.dataTables.js"></script>
-  <script>
-    $(document).ready(function() {
-      console.log("Document loaded");
-      $.getJSON("data/courses.json", function(data) {
-        var courses = [];
-        $.each(data, function(index, course) {
-          //console.log(course);
-          $('#coursesList tr:last').after('<tr><td>' + course.Cours + '</td><td>' + course.Code + '</td><td>' + course.Enseignant + '</td><td>' + course.Sem + '</td><td>' + course.ECTS + '</td><td>' + course.Exam + '</td></tr>');
-        });
-      });
-      $('#coursesList').DataTables();
-    });
-  </script>
-
   <script src="dep/bootstrap/dist/js/bootstrap.bundle.js.map"></script>
-  <script src="dep/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+  <script src="/script.js"></script>
 </body>
 
 </html>
