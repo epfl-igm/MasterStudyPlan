@@ -4,6 +4,7 @@
 <head>
   <link href="dep/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="dep/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
   <meta charset="utf-8">
   <title>MSP - Courses</title>
 </head>
@@ -28,21 +29,74 @@
       </ul>
     </div>
   </nav>
+  <div class="main-content container">
+    <div class="half-centered">
+      <input type="text" class="searchfield" id="searchCourses" placeholder="Search" />
+    </div>
 
-  <table id="coursesTable" class="display" style="width:100%">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Code</th>
-        <th>Teacher</th>
-        <th>Semester</th>
-        <th>ECTS</th>
-       <th>Exam</th>
-      </tr>
-    </thead>
-    <tbody id="coursesList">
-    </tbody>
-  </table>
+    <div class="row no-gutters filters-bar">
+      <div class="col-1">
+        <label><b>Filter:</b></label>
+      </div>
+
+      <div id="filterUnit" class="col-2">
+      <label for="selectUnit">Unit:</label>
+        <select id="selectUnit">
+          <option>Test#1</option>
+          <option>Test#2</option>
+          <option>Test#2</option>
+        </select>
+      </div>
+
+      <div id="filterTrack" class="col-2">
+        <label for="selectTrack">Track:</label>
+        <select id="selectUnit">
+          <option>Test#1</option>
+          <option>Test#2</option>
+          <option>Test#2</option>
+        </select>
+      </div>
+
+      <div id="filterGroup" class="col-2">
+        <label for="selectGroup">Group:</label>
+        <select id="selectGroup">
+          <option>Test#1</option>
+          <option>Test#2</option>
+          <option>Test#2</option>
+        </select>
+      </div>
+
+      <div id="filterECTS" style="text-align: right;" class="col-5 row no-gutters full-width">
+        <div style="padding-right: 5px;" class="col-5">
+          ECTS between
+        </div>
+        <div class="col-3">
+          <input class="full-width" type="text" value="0"></input>
+        </div>
+        <div style="text-align: center;" class="col-1">
+          and
+        </div>
+        <div class="col-3 full-width">
+          <input class="full-width" type="text" value="max."></input>
+        </div>
+      </div>
+    </div>
+
+    <table id="coursesTable" class="display" style="width:100%">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Code</th>
+          <th>Teacher</th>
+          <th>Semester</th>
+          <th>ECTS</th>
+         <th>Exam</th>
+        </tr>
+      </thead>
+      <tbody id="coursesList">
+      </tbody>
+    </table>
+  </div>
 
   <script src="dep/datatables.net/js/jquery.dataTables.js"></script>
   <script src="dep/bootstrap/dist/js/bootstrap.bundle.js.map"></script>
