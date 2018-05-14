@@ -1,0 +1,59 @@
+html {
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+input#searchCourses {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.half-centered {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.center-inside {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.main-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.inline {
+  float: left;
+  display: inline-block;
+}
+
+.filters-bar {
+  margin-bottom: 20px;
+}
+
