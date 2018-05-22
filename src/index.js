@@ -1,9 +1,10 @@
 var $ = require( 'jquery' );
 //require( 'datatables.net' )();
-var dt = require( 'datatables.net-bs4' )();
+var dt = require( 'datatables.net-bs4' );
 //require( 'datatables.net-fixedheader-bs4' )();
 //require( 'datatables.net-responsive-bs4' )();
 //require( 'datatables.net-scroller-bs4' )();
+import css from './style.scss'
 
 $(document).ready(function() {
   // Make sure script is loaded

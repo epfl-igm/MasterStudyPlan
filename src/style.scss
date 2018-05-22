@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
 html {
   font-size: 12px;
 }
@@ -57,8 +59,10 @@ input#searchCourses {
   margin-bottom: 20px;
 }
 
-.info-panel > h1, .info-panel > h2, .info-panel > h3, .info-panel > h4, .info-panel > h5, .info-panel > h6 {
-  margin-bottom: 0;
+.info-panel {
+  > h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+  }
 }
 
 .info-panel-header {
