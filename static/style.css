@@ -57,3 +57,13 @@ input#searchCourses {
   margin-bottom: 20px;
 }
 
+.info-panel > h1, .info-panel > h2, .info-panel > h3, .info-panel > h4, .info-panel > h5, .info-panel > h6 {
+  margin-bottom: 0;
+}
+
+.info-panel-header {
+  padding: 12px;
+  border-bottom: 1px solid #e9ecef;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+}
