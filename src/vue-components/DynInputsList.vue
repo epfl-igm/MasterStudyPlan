@@ -1,10 +1,13 @@
 <template>
   <div>
-    <div v-for="(inputValue, index) in values">
-      <input type="text" v-model="values[index]">
-      <!--input type="text" v-bind:value="value" v-bind:name="name + '[]'"-->
-      <a href='javascript:void(0);' @click="add">Add</a>
-      <a href='javascript:void(0);' @click="remove(index)">Remove</a>
+    <div class="form-row" v-bind:id="id" v-for="(inputValue, index) in values">
+      <div class="col-10">
+        <input v-bind:name="name + []" class="form-control" type="text" v-model="values[index]">
+      </div>
+      <div class="col-2">
+        <a href='javascript:void(0);' @click="add">Add</a>
+        <a href='javascript:void(0);' @click="remove(index)">Remove</a>
+      </div>
     </div>
   </div>
 </template>
@@ -15,6 +18,7 @@ module.exports = {
   props: {
     csv: Array,
     name: String,
+    id: String,
   },
   data: function() {
     return {
@@ -33,4 +37,7 @@ module.exports = {
 </script>
 
 <style scoped>
+#input-row {
+  display: inline
+}
 </style>
