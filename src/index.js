@@ -5,6 +5,11 @@ var dt = require( 'datatables.net-bs4' );
 //require( 'datatables.net-responsive-bs4' )();
 //require( 'datatables.net-scroller-bs4' )();
 import css from './style.scss'
+import 'bootstrap';
+
+//import * as dynInputList from './dynlist.js'
+//var dynInputList = require('./dynlist')
+import vue from './vue.js'
 
 $(document).ready(function() {
   // Make sure script is loaded
@@ -31,6 +36,8 @@ $(document).ready(function() {
     })
     coursesTableAPI = coursesTable.dataTable().api()
   });
+
+  $('#test').testHello
 
   // Custom search field
   $('#searchCourses').keyup(function(){

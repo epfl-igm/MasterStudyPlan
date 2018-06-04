@@ -5,7 +5,9 @@
   "main": "app.js",
   "private": true,
   "scripts": {
-    "start": "npx webpack; node app.js"
+    "start": "npx webpack --watch & node app.js",
+    "build": "npx webpack",
+    "watch": "npx webpack --watch --info-verbosity verbose"
   },
   "repository": {
     "type": "git",
@@ -26,9 +28,13 @@
     "datatables.net-scroller-bs4": "^1.4.4",
     "express": "^4.16.3",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.3"
+    "popper.js": "^1.14.3",
+    "vue": "^2.5.16",
+    "vue-loader": "^15.2.2",
+    "vue-template-compiler": "^2.5.16"
   },
   "devDependencies": {
+    "babel-loader": "^7.1.4",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
     "node-sass": "^4.9.0",
