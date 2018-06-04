@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>MSP - Courses</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="#"> <img src="EPFL-logo.svg" alt="EPFL" style="width:100px;height:60px;" class="navbar-brand"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Study Plan <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="main-view" class="main-content container">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Edit course</h1>
+        <p class="lead"><b>WARNING</b> The changes you provide will be logged and every user will see the content changed.</p>
+      </div>
+    </div>
+
+    <!--
+      This formular should update those fields related to the course: 
+        * Title (text)
+        * Lecturer(s) (dynamic list / text)
+        * Summary (text area)
+        * edu.epfl link en and [optional] fr (dynamic list / text / link)
+        * [optional] Keywords (select2 tag list)
+        * [optional] Learning Prerequisites (dynamic list / text)
+        * [optional] Learning Outcomes (dynamic list / text area)
+        * [optional] Transversal skills (dynamic list / text area)
+        * [optional] Teaching methods (text area)
+        * [optional] Expected student activties (text area)
+        * [optional] Assessment methods (text area)
+        * Supervision:
+          * Office hours (checkbox) Default: no
+          * Assistants   (checkbox) Default: no
+          * Forum        (checkbox) Default: no
+        * [optional] Resources:
+          * Papers, previously Bibliography (dynamic list / text)
+          * Books, previously Ressources en bibliotheque (dynamic list / text / link)
+
+      For groups, which are related to the section, there must be 1 tab by group-multi
+      and one for all group-single.
+
+      In the first tab it is all about the course itself.
+      In a group-multi tab, it is possible to select with a checkbox the related "categories".
+      In the last tab, it is possible to select with a checkbox the related "containers"
+
+      The course itself is global but other settings are related to the section.
+    -->
+    <!-- Tabs nav -->
+    <nav>
+      <div class="nav nav-tabs nav-fill" id="edit_course_NavTabs" role="tablist">
+        <a class="nav-item nav-link active" id="course-tab" data-toggle="tab" href="#course" role="tab" aria-controls="course" aria-selected="true">Course</a>
+        <a class="nav-item nav-link" id="tracks-tab" data-toggle="tab" href="#tracks" role="tab" aria-controls="tracks" aria-selected="false">Tracks</a>
+        <a class="nav-item nav-link" id="minors-tab" data-toggle="tab" href="#minors" role="tab" aria-controls="minors" aria-selected="false">Minors</a>
+        <a class="nav-item nav-link" id="others-tab" data-toggle="tab" href="#others" role="tab" aria-controls="others" aria-selected="false">Others</a>
+      </div>
+    </nav>
+    <!-- End tabs nav -->
+
+    <!-- Tabs content -->
+    <div class="tab-content" id="edit_course_TabContent">
+      <!-- Tab course -->
+      <div class="tab-pane fade show active" id="course" role="tabpanel" aria-labelledby="course-tab">
+        <p><b>Those settings are global to EPFL</b></p>
+        <form>
+          <div class="form-group row">
+
+            <label for="inputTitle" class="col-sm-2 col-form-label" value="Multi-body simulation">Title</label>
+            <div class="col-sm-10">
+              <input type="title" class="form-control" id="inputTitle" placeholder="Title">
+            </div>
+
+            <label for="inputTitle" class="col-sm-2 col-form-label" value="Multi-body simulation">Title</label>
+            <div class="col-sm-10">
+              <input type="title" class="form-control" id="inputTitle" placeholder="Title">
+            </div>
+
+            <dyn-inputs-list name="lecturers" v-bind:csv="['hey', 'hello', 'toto']"></dyn-inputs-list>
+
+          </div>
+        </form>
+      </div>
+      <!-- End tab course -->
+
+      <!-- Tab tracks -->
+      <div class="tab-pane fade" id="tracks" role="tabpanel" aria-labelledby="tracks-tab">Tracks</div>
+      <!-- End tab tracks -->
+
+      <!-- Tab minors -->
+      <div class="tab-pane fade" id="minors" role="tabpanel" aria-labelledby="minors-tab">Minors</div>
+      <!-- End tab minors -->
+
+      <!-- Tab others -->
+      <div class="tab-pane fade" id="others" role="tabpanel" aria-labelledby="others-tab">others</div>
+      <!-- End tab others -->
+    </div>
+    <!-- End tabs content -->
+  </div>
+
+  <div id="test"></div>
+
+  <script src="./dist/bundle.js"></script>
+</body>
+
+</html>
