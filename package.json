@@ -1,0 +1,47 @@
+{
+  "name": "masterstudyplan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "start": "npx webpack --watch & node app.js",
+    "build": "npx webpack",
+    "watch": "npx webpack --watch --info-verbosity verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epfl-igm/MasterStudyPlan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epfl-igm/MasterStudyPlan/issues"
+  },
+  "homepage": "https://github.com/epfl-igm/MasterStudyPlan#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "datatables.net-bs4": "^1.10.16",
+    "datatables.net-fixedheader-bs4": "^3.1.3",
+    "datatables.net-keytable-bs4": "^2.3.2",
+    "datatables.net-responsive-bs4": "^2.2.1",
+    "datatables.net-scroller-bs4": "^1.4.4",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "vue": "^2.5.16",
+    "vue-loader": "^15.2.2",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-validator": "^3.0.1"
+  }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>MSP - Student</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="#"> <img src="EPFL-logo.svg" alt="EPFL" style="width:100px;height:60px;" class="navbar-brand"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Study Plan <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- end menu -->
+
+  <div class="container">
+
+    <div class="info-panel container-fluid">
+      <div class="info-panel-header bg-primary row">
+        <div class="col-12"><h5>Information</h5></div>
+      </div>
+      <div class="info-panel-body row">
+        <div class="col align-self-center">
+          <p><h5>Loïc Humbert</h5></p>
+          <p><b>Track:</b> none</p>
+          <p><b>Minor:</b> none</p>
+        </div>
+        <div class="col align-self-center">
+          <p><b>Obtained ECTS:</b> 0</p>
+          <p><b>Planified ECTS:</b> 0</p>
+          <p><b>Semester:</b> 0</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-md-10">
+
+        <!-- Start Horizontal tabs -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="sem1-tab" data-toggle="tab" href="#sem1" role="tab" aria-controls="sem1" aria-selected="true">Semester 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="sem2-tab" data-toggle="tab" href="#sem2" role="tab" aria-controls="sem2" aria-selected="false">Semester 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="sem3-tab" data-toggle="tab" href="#sem3" role="tab" aria-controls="sem3" aria-selected="false">Semester 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="add-semester-tab" data-toggle="tab" href="#add-semester" role="tab" aria-controls="add-semester" aria-selected="false">Add Semester</a>
+          </li>
+        </ul>
+        <!-- End Horizontal tabs -->
+
+        <!-- Start primary tabs content -->
+        <div class="tab-content" id="myTabContent">
+
+          <!-- Start Semester 1 panel -->
+          <div class="tab-pane fade show active" id="sem1" role="tabpanel" aria-labelledby="sem1-tab">
+            <div class="container-fluid" style="padding: 0;">
+              <div class="row no-gutters">
+                <div class="col-2">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-sgm-tab" data-toggle="pill" href="#v-pills-sgm" role="tab" aria-controls="v-pills-sgm" aria-selected="true">SGM</a>
+                    <a class="nav-link" id="v-pills-track-tab" data-toggle="pill" href="#v-pills-track" role="tab" aria-controls="v-pills-track" aria-selected="false">Track</a>
+                    <a class="nav-link" id="v-pills-minor-tab" data-toggle="pill" href="#v-pills-minor" role="tab" aria-controls="v-pills-minor" aria-selected="false">Minor</a>
+                    <a class="nav-link" id="v-pills-bachelor-tab" data-toggle="pill" href="#v-pills-bachelor" role="tab" aria-controls="v-pills-bachelor" aria-selected="false">Bachelor</a>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-sgm" role="tabpanel" aria-labelledby="v-pills-sgm-tab">
+                      <h2>SGM</h2>
+                      <p>1-1</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-track" role="tabpanel" aria-labelledby="v-pills-track-tab">
+                      <h2>Track</h2>
+                      <p>1-2</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-minor" role="tabpanel" aria-labelledby="v-pills-minor-tab">
+                      <h2>Minor</h2>
+                      <p>1-3</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-bachelor" role="tabpanel" aria-labelledby="v-pills-bachelor-tab">
+                      <h2>Bachelor</h2>
+                      <p>1-4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="sem2" role="tabpanel" aria-labelledby="sem2-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-3">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab2" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-sgm-tab2" data-toggle="pill" href="#v-pills-sgm2" role="tab" aria-controls="v-pills-sgm2" aria-selected="true">SGM</a>
+                    <a class="nav-link" id="v-pills-track-tab2" data-toggle="pill" href="#v-pills-track2" role="tab" aria-controls="v-pills-track2" aria-selected="false">Track</a>
+                    <a class="nav-link" id="v-pills-minor-tab2" data-toggle="pill" href="#v-pills-minor2" role="tab" aria-controls="v-pills-minor2" aria-selected="false">Minor</a>
+                    <a class="nav-link" id="v-pills-bachelor-tab2" data-toggle="pill" href="#v-pills-bachelor2" role="tab" aria-controls="v-pills-bachelor2" aria-selected="false">Bachelor</a>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div class="tab-content" id="v-pills-tabContent2">
+                    <div class="tab-pane fade show active" id="v-pills-sgm2" role="tabpanel" aria-labelledby="v-pills-sgm-tab2">
+                      <h2>SGM</h2>
+                      <p>2-1</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-track2" role="tabpanel" aria-labelledby="v-pills-track-tab2">
+                      <h2>Track</h2>
+                      <p>2-2</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-minor2" role="tabpanel" aria-labelledby="v-pills-minor-tab2">
+                      <h2>Minor</h2>
+                      <p>2-3</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-bachelor2" role="tabpanel" aria-labelledby="v-pills-bachelor-tab2">
+                      <h2>Bachelor</h2>
+                      <p>2-4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="sem3" role="tabpanel" aria-labelledby="sem3-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-3">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-sgm-tab3" data-toggle="pill" href="#v-pills-sgm3" role="tab" aria-controls="v-pills-sgm3" aria-selected="true">SGM</a>
+                    <a class="nav-link" id="v-pills-track-tab3" data-toggle="pill" href="#v-pills-track3" role="tab" aria-controls="v-pills-track3" aria-selected="false">Track</a>
+                    <a class="nav-link" id="v-pills-minor-tab3" data-toggle="pill" href="#v-pills-minor3" role="tab" aria-controls="v-pills-minor3" aria-selected="false">Minor</a>
+                    <a class="nav-link" id="v-pills-bachelor-tab3" data-toggle="pill" href="#v-pills-bachelor3" role="tab" aria-controls="v-pills-bachelor3" aria-selected="false">Bachelor</a>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div class="tab-content" id="v-pills-tabContent3">
+                    <div class="tab-pane fade show active" id="v-pills-sgm3" role="tabpanel" aria-labelledby="v-pills-sgm-tab3">
+                      <h2>SGM</h2>
+                      <p>3-1</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-track3" role="tabpanel" aria-labelledby="v-pills-track-tab3">
+                      <h2>Track</h2>
+                      <p>3-2</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-minor3" role="tabpanel" aria-labelledby="v-pills-minor-tab3">
+                      <h2>Minor</h2>
+                      <p>3-3</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-bachelor3" role="tabpanel" aria-labelledby="v-pills-bachelor-tab3">
+                      <h2>Bachelor</h2>
+                      <p>3-4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="add-semester" role="tabpanel" aria-labelledby="add-semesters-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-3">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-sgm-tab4" data-toggle="pill" href="#v-pills-sgm4" role="tab" aria-controls="v-pills-sgm4" aria-selected="true">SGM</a>
+                    <a class="nav-link" id="v-pills-track-tab4" data-toggle="pill" href="#v-pills-track4" role="tab" aria-controls="v-pills-track4" aria-selected="false">Track</a>
+                    <a class="nav-link" id="v-pills-minor-tab4" data-toggle="pill" href="#v-pills-minor4" role="tab" aria-controls="v-pills-minor4" aria-selected="false">Minor</a>
+                    <a class="nav-link" id="v-pills-bachelor-tab4" data-toggle="pill" href="#v-pills-bachelor4" role="tab" aria-controls="v-pills-bachelor4" aria-selected="false">Bachelor</a>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div class="tab-content" id="v-pills-tabContent4">
+                    <div class="tab-pane fade show active" id="v-pills-sgm4" role="tabpanel" aria-labelledby="v-pills-sgm-tab4">
+                      <h2>SGM</h2>
+                      <p>4-1</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-track4" role="tabpanel" aria-labelledby="v-pills-track-tab4">
+                      <h2>Track</h2>
+                      <p>4-2</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-minor4" role="tabpanel" aria-labelledby="v-pills-minor-tab4">
+                      <h2>Minor</h2>
+                      <p>4-3</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-bachelor4" role="tabpanel" aria-labelledby="v-pills-bachelor-tab4">
+                      <h2>Bachelor</h2>
+                      <p>4-4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/dist/bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+html {
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+input#searchCourses {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.half-centered {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.center-inside {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.main-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.inline {
+  float: left;
+  display: inline-block;
+}
+
+.filters-bar {
+  margin-bottom: 20px;
+}
+
+.info-panel {
+  > h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+  }
+}
+
+.info-panel-header {
+  padding: 12px;
+  border-bottom: 1px solid #e9ecef;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+}
+
+.info-panel {
+  border: 1px solid #e9ecef;
+  border-radius: .3rem;
+}
